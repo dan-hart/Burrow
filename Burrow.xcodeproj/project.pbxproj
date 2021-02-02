@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5228AFCC25C901BD0018CB32 /* AddPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228AFCB25C901BD0018CB32 /* AddPropertyView.swift */; };
+		5228AFD925C905AE0018CB32 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F891BB25C8D628001F4326 /* Room.swift */; };
+		5228AFDA25C905AE0018CB32 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F891C125C8D6AE001F4326 /* Device.swift */; };
+		5228AFDB25C905AE0018CB32 /* AddPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228AFCB25C901BD0018CB32 /* AddPropertyView.swift */; };
+		5228AFDC25C905AE0018CB32 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F891B125C8D60D001F4326 /* Property.swift */; };
+		5228AFDD25C905AE0018CB32 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F891C725C8D6F7001F4326 /* Component.swift */; };
+		5228AFDE25C905AE0018CB32 /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C1AF25C8DB4C00137FCA /* PropertyDetailView.swift */; };
 		52A9C1B025C8DB4C00137FCA /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C1AF25C8DB4C00137FCA /* PropertyDetailView.swift */; };
 		52F8918A25C8D5EB001F4326 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8918925C8D5EB001F4326 /* Tests_iOS.swift */; };
 		52F8919525C8D5EB001F4326 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8919425C8D5EB001F4326 /* Tests_macOS.swift */; };
@@ -373,8 +379,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5228AFDC25C905AE0018CB32 /* Property.swift in Sources */,
+				5228AFDD25C905AE0018CB32 /* Component.swift in Sources */,
 				52F8919A25C8D5EB001F4326 /* ContentView.swift in Sources */,
+				5228AFDB25C905AE0018CB32 /* AddPropertyView.swift in Sources */,
 				52F8919825C8D5EB001F4326 /* BurrowApp.swift in Sources */,
+				5228AFD925C905AE0018CB32 /* Room.swift in Sources */,
+				5228AFDE25C905AE0018CB32 /* PropertyDetailView.swift in Sources */,
+				5228AFDA25C905AE0018CB32 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
