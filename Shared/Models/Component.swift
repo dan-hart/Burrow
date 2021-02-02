@@ -13,7 +13,9 @@ enum ComponentType: String, CaseIterable {
     case filter = "Filter"
 }
 
-struct Component {
+struct Component: Identifiable {
+    let id = UUID()
+    
     let name: String
     let type: ComponentType
     let quantity: Int

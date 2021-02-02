@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct Property {
+struct Property: Identifiable {
+    let id = UUID()
+    
     let name: String
+    let description: String?
     let rooms: [Room]?
 }

@@ -11,11 +11,15 @@ struct PropertyDetailView: View {
     var property: Property
     
     var body: some View {
-        List {
-            ForEach(property.rooms ?? [], id: \.name) { room in
-                Text(room.name)
+        VStack(alignment: .leading) {
+            Text(property.description ?? "")
+                .font(.subheadline)
+            List {
+                ForEach(property.rooms ?? [], id: \.name) { room in
+                    Text(room.name)
+                }
             }
-        }
+        }.padding()
         
         .navigationTitle(property.name)
     }
@@ -23,6 +27,6 @@ struct PropertyDetailView: View {
 
 struct PropertyDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PropertyDetailView(property: Property(name: "House", rooms: nil))
+        PropertyDetailView(property: Property(name: "House", description: "A nice house", rooms: nil))
     }
 }

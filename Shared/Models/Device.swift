@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Device {
+struct Device: Identifiable {
+    let id = UUID()
+    
     let name: String
     let components: [Component]?
 }

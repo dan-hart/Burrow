@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5228AFCC25C901BD0018CB32 /* AddPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228AFCB25C901BD0018CB32 /* AddPropertyView.swift */; };
 		52A9C1B025C8DB4C00137FCA /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C1AF25C8DB4C00137FCA /* PropertyDetailView.swift */; };
 		52F8918A25C8D5EB001F4326 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8918925C8D5EB001F4326 /* Tests_iOS.swift */; };
 		52F8919525C8D5EB001F4326 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8919425C8D5EB001F4326 /* Tests_macOS.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5228AFCB25C901BD0018CB32 /* AddPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPropertyView.swift; sourceTree = "<group>"; };
 		52A9C1AF25C8DB4C00137FCA /* PropertyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailView.swift; sourceTree = "<group>"; };
 		52F8916E25C8D5E9001F4326 /* BurrowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurrowApp.swift; sourceTree = "<group>"; };
 		52F8916F25C8D5E9001F4326 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5228AFCA25C901AB0018CB32 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				5228AFCB25C901BD0018CB32 /* AddPropertyView.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 		52A9C1A425C8DB2B00137FCA /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				52F8916F25C8D5E9001F4326 /* ContentView.swift */,
+				5228AFCA25C901AB0018CB32 /* Add */,
 				52A9C1A425C8DB2B00137FCA /* Detail */,
 			);
 			path = Views;
@@ -348,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F891B225C8D60D001F4326 /* Property.swift in Sources */,
+				5228AFCC25C901BD0018CB32 /* AddPropertyView.swift in Sources */,
 				52F891C825C8D6F7001F4326 /* Component.swift in Sources */,
 				52F8919925C8D5EB001F4326 /* ContentView.swift in Sources */,
 				52F891BC25C8D628001F4326 /* Room.swift in Sources */,

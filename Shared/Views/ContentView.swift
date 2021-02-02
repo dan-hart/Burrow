@@ -9,25 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var properties: [Property] = []
+    @State private var isShowingAddPropertyModal: Bool = false
     
     var body: some View {
         NavigationView {
-            ForEach(properties, id: \.name) { property in
-                Text(property.name)
+            List {
+                ForEach(properties) { property in
+                    NavigationLink(
+                        destination: PropertyDetailView(property: property),
+                        label: {
+                            Text(property.name)
+                        })
+                }
             }
-            
-            /*
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        // Implement
+                        isShowingAddPropertyModal.toggle()
                     }, label: {
                         Image(systemName: "plus.circle.fill")
                     })
                 }
-            }*/
+            }
             
             .navigationTitle("Burrow")
+        }
+        .sheet(isPresented: $isShowingAddPropertyModal) {
+            NavigationView {
+                AddPropertyView(properties: $properties)
+                    
+                .navigationTitle("Add Property")
+            }
         }
     }
 }

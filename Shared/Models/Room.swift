@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Room {    
+struct Room: Identifiable {
+    let id = UUID()
+    
     let name: String
     let devices: [Device]?
 }
